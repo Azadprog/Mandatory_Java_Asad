@@ -1,5 +1,8 @@
 public class Worker {
 
+
+
+
     private String firstName;
     private String lastName;
     private Address address;
@@ -13,4 +16,11 @@ public class Worker {
     public double calculatePay(){};
     @Override
     public String toString(){};
+
+
+
+
+
+
+
 }

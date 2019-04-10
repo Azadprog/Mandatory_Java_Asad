@@ -1,4 +1,4 @@
-public class Address {
+fffffpublic class Address {
 
     private String street1;
     private String street2;
@@ -10,8 +10,21 @@ public class Address {
 
     };
 
-    public Address(String) {
+    public Address(String street1, String city , String state,String zip ) {
+
 
 
     }
+
+    public Address(String street1, String street2, String city, String state, String zip) {
+
+    }
+
+
+
+    public  Address() {
+
+
+    }
+}
 }
