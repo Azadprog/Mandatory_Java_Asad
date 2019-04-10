@@ -4,8 +4,8 @@ public class Project {
     public static void main(String[] args) {
 
 
-        Addres addres = new Addrees[] ;
-
+        Addres customer1  = new Adress();
+        System.out.println(customer1);
 
 
         private String projectName;
@@ -29,6 +29,8 @@ public class Project {
         }
         ;
         public int compareTo (Object) {};
+
+
 
 
     }
