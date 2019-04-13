@@ -5,19 +5,16 @@
     private String city;
     private String state;
     private String zip;
-    @Override
-    public String toString(){
 
-
-
-    };
 
     public Address(String street1, String city , String state,String zip ) {
+    // husk og bruke Constructor chain her !!!
 
-    this.street1 = street1;
-    this.city = city;
-    this.state = state;
-    this.zip = zip;
+        this.street1 =street1;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+
 
     }
 
@@ -32,5 +29,18 @@
     }
 
 
-}
+     @Override
+     public String toString( ){
+        if(street2 == null) {
+            return  street1 + "\n" + city + "," +  state +  " " + zip;
+        } else {
+
+            return  street1 + "\n" + street2 +  "\n" + city + ", " + state + " " + zip;
+        }
+
+
+
+
+     };
+
 }

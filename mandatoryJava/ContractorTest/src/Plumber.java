@@ -1,11 +1,36 @@
 public class Plumber extends  Worker {
 
-    public void setPlumbingCost(double){};
-    public String doWork(){};
+    private  double plumbingMatrials = 0;
+
+   public  Plumber(String firstName, String lastName, Address address,
+                   int idnumber, double hours,double rate){
+
+       super(firstName,lastName,address,idnumber,hours,rate);
+   }
+
+
+
+
+    public void setPlumbingCosts(double ammount){
+
+       plumbingMatrials = ammount;
+    };
+
+
+    public String doWork(){
+        return  "Install plumbing";
+    };
+
     @Override
-    public double calculatePay(){};
+    public String toString(){
+        return  "Plumber" + super.toString() + "\n" + doWork();
+    };
     @Override
-    public String toString(){};
+    public double calculatePay(){
+
+        return  hoursWorked * hourlyRate + plumbingMatrials;
+    };
+
 
 
 

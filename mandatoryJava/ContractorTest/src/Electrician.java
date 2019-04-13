@@ -1,21 +1,36 @@
 public class Electrician extends  Worker {
 
-    private double wiringCost;
-
-    public void setWiringCost(double){};
-    public String doWork(){};
-    @Override
-    public double calculatePay(){};
-    @Override
-    public String toString(){};
+    private double wiringCost = 0.0;
 
 
-    public Electrician(String firstName, String lastName,Adress adress,int idNumber, double hoursWorked, double hourlyRate){
+
+    public Electrician(String firstName, String lastName,Address address ,
+                       int idNumber, double hoursWorked, double hourlyRate){
+
+        super(firstName,lastName,address,idNumber,hoursWorked,hourlyRate);
 
 
     }
+    public void setWiringCosts(double ammount ){
+        wiringCost = ammount;
 
-    public void  calcultePay (hoursWorked,hourlyRate, wiringCosr){
-        horusWorked *  hourlyRate + wiringCost;
-    }
+    };
+    public String doWork(){
+
+       return  "intall";
+    };
+
+
+
+    @Override
+    public String toString(){
+
+        return  "Electrictian" + super.toString() + "\n" + doWork();
+    };
+
+
+
+        public double calcultePay(){
+            return hoursWorked *  hourlyRate + wiringCost;
+        }
 }

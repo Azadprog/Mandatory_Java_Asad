@@ -1,43 +1,106 @@
-import java.util.Date;
+import java.time.LocalDate;
+import java.util.ArrayList;
 
-public class Project {
-    public static void main(String[] args) {
-
-
-        Addres customer1  = new Adress();
-        System.out.println(customer1);
+public class Project implements Comparable {
 
 
-        private String projectName;
-        private String coustomer;
-        private Address projectAddress;
-        private double overheadPercent;
-        private Date startDate;
-        private Date endDate;
+    public ArrayList<Worker> workers = new ArrayList<>();
+    private String projectName;
+    private String coustomer;
+    private Address projectAddress;
+    private double overheadPercent = .10, overheadAmmount;
+    private LocalDate startDate;
+    private LocalDate endDate;
 
-        public String getName () {
-        }
-        ;
-        public double getOverhead () {
-        }
-        ;
-        public double getTotalCost () {
-        }
-        ;
-        public void setOverhead (double) {};
-        public double calculateProjectCost () {
-        }
-        ;
-        public int compareTo (Object) {};
+    public Project(String projectName, String coustomer, Address projectAddress,
+                   LocalDate startDate, LocalDate endDate) {     // Constructer1
 
-
+        this.projectName = projectName;
+        this.coustomer = coustomer;
+        this.projectAddress = projectAddress;
+        this.overheadPercent = overheadPercent;
+        this.startDate = startDate;
+        this.endDate = endDate;
 
 
     }
 
 
+    public Project(String projectName, String coustomer, Address projectAddress) { //Constructor2
 
-}
+        this.projectAddress = projectAddress;
+        this.projectName = projectName;
+        coustomer = coustomer;
+
+    }
+
+
+    public String getName() {
+        return projectName;
+    }
+
+    public double getOverhead() {
+        return overheadAmmount;
+    }
+
+    public double getTotalCost() {
+        return calculateProjectcost();
+    }
+
+    public void setOverhead(double overhead) {
+
+        this.overheadPercent = overhead;
+    }
+
+
+    public void addWorkes(ArrayList<Worker> workers) {
+        this.workers = workers;
+
+
+    }
+
+    public double calculateProjectcost() {
+        double totalCost = 0;
+        for (Worker w : workers) {
+            totalCost += w.calculatePay();
+
+        }
+        overheadAmmount = overheadPercent * totalCost;
+        totalCost += overheadAmmount;
+        return totalCost;
+
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        if (o instanceof Project) {
+            if (((Project) o).startDate.isAfter(this.startDate))
+                return -1;
+        }
+        return 1;
+
+    }
+
+    @Override
+    public String toString() {
+
+        String projectDetails;
+        projectDetails = "Project name : $s" + "\nStart Date:" + startDate + "\nCustomer:" + coustomer + "\nAddress"
+                + projectAddress.toString() + "\n" + "===========================\n";
+        for (Worker w : workers) {
+
+            projectDetails += w.toString() + "\n\n";
+
+
+        }
+        projectDetails += "Project total : $%.2f\n";
+        projectDetails += "Contractor Overhead : $%.2f\n";
+        return projectDetails;
+
+    }
+    }
+
+
 
 
 
