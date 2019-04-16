@@ -1,4 +1,4 @@
-public class Carpenter extends  Worker {
+public class Carpenter extends Worker {
 
     private double lumberCost;
 
@@ -6,11 +6,9 @@ public class Carpenter extends  Worker {
     public Carpenter(String firstName, String lastName, Address address,
                      int idNumber, double hoursWorked, double hourlyRate) {
         super(firstName, lastName, address, idNumber, hoursWorked, hourlyRate);
+
+
     }
-
-
-
-
 
 
     public void setLumberCosts(double ammount) {
@@ -29,8 +27,8 @@ public class Carpenter extends  Worker {
     ;
 
     @Override
-    public String toString( ) {
-        return  "Capenter : " + super.toString() + "\n" + doWork();
+    public String toString() {
+        return "Capenter : " + super.toString() + "\n" + doWork();
     }
 
     ;
@@ -38,7 +36,7 @@ public class Carpenter extends  Worker {
 
     @Override
     public double calculatePay() {
-       return  hoursWorked * hourlyRate + lumberCost;
+        return super.calculatePay() + lumberCost;
 
     }
 

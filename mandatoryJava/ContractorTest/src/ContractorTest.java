@@ -1,8 +1,9 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
+
 public class ContractorTest {
     public static void main(String[] args) {
+
 
         Address client1 = new Address("123 Main Street", "Anywhere", "PA",
 //#A
@@ -39,8 +40,8 @@ public class ContractorTest {
         p1.addWorkes(workers); //house requires all three workers //#H
         p1.setOverhead(.18);
 //the overhead is higher for a house
-        System.out.printf(p1.toString(), p1.getName(),
-                p1.getTotalCost(), p1.getOverhead());
+        System.out.println(p1.toString() +  p1.getName() +
+                p1.getTotalCost() +  p1.getOverhead());
         System.out.println("***************************************************"
                 + "\n***************************************************\n");
         workers.remove(p); //project 2 does not need a plumber //#I
@@ -48,8 +49,8 @@ public class ContractorTest {
         ((Electrician) e).setWiringCosts(300); //#J
         workers.get(0).setHoursWorked(20); //set the hours worked to 20
         p2.addWorkes(workers);
-        System.out.printf(p2.toString(), p2.getName(),
-                p2.getTotalCost(), p2.getOverhead());
+        System.out.println(p2.toString()+ p2.getName()+
+                p2.getTotalCost() + p2.getOverhead());
 
 //#K
         if (p2.compareTo(p1) < 0) {
@@ -62,6 +63,20 @@ public class ContractorTest {
         System.out.println("\n");
 
 
+        /*
+        Huske liste :
 
+style selv  - er separarete  ikke  store mellomrom  lesbart
+
+egne navn  - varable navan
+
+forhold til uml  skjema
+
+kommentarer
+
+
+
+
+         */
     }
 }

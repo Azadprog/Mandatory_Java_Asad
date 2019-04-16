@@ -28,7 +28,7 @@ public class Plumber extends  Worker {
     @Override
     public double calculatePay(){
 
-        return  hoursWorked * hourlyRate + plumbingMatrials;
+        return  super.calculatePay() + plumbingMatrials;
     };
 
 

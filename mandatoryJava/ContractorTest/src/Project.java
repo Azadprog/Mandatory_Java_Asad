@@ -6,19 +6,19 @@ public class Project implements Comparable {
 
     public ArrayList<Worker> workers = new ArrayList<>();
     private String projectName;
-    private String coustomer;
+    private String owner;
     private Address projectAddress;
     private double overheadPercent = .10, overheadAmmount;
     private LocalDate startDate;
     private LocalDate endDate;
 
-    public Project(String projectName, String coustomer, Address projectAddress,
+    public Project(String projectName, String owner,  Address projectAddress,
                    LocalDate startDate, LocalDate endDate) {     // Constructer1
 
         this.projectName = projectName;
-        this.coustomer = coustomer;
+        this.owner =  owner;
         this.projectAddress = projectAddress;
-        this.overheadPercent = overheadPercent;
+
         this.startDate = startDate;
         this.endDate = endDate;
 
@@ -26,11 +26,11 @@ public class Project implements Comparable {
     }
 
 
-    public Project(String projectName, String coustomer, Address projectAddress) { //Constructor2
+    public Project(String projectName, String owner, Address projectAddress) { //Constructor2
 
         this.projectAddress = projectAddress;
         this.projectName = projectName;
-        coustomer = coustomer;
+        this.owner = owner ;
 
     }
 
@@ -85,7 +85,7 @@ public class Project implements Comparable {
     public String toString() {
 
         String projectDetails;
-        projectDetails = "Project name : $s" + "\nStart Date:" + startDate + "\nCustomer:" + coustomer + "\nAddress"
+        projectDetails = "Project name : $s" + "\nStart Date:" + startDate + "\nCustomer:" + owner + "\nAddress"
                 + projectAddress.toString() + "\n" + "===========================\n";
         for (Worker w : workers) {
 

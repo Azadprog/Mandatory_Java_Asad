@@ -29,8 +29,11 @@ public class Electrician extends  Worker {
     };
 
 
+        @Override
+        public double calculatePay()
 
-        public double calcultePay(){
-            return hoursWorked *  hourlyRate + wiringCost;
+        {
+            return super.calculatePay()+ wiringCost;
+
         }
 }

@@ -1,12 +1,12 @@
 public class Worker {
 
 
-    public String firstName;
-    public String lastName;
-    public Address address;
-    public int idnNmber;
-    public double hoursWorked;
-    public double hourlyRate;
+    private String firstName;
+    private  String lastName;
+    private Address address;
+    private int idnNmber;
+    private double hoursWorked;
+    private double hourlyRate;
 
     public String doWork() {
         return "Worker";
@@ -26,6 +26,8 @@ public class Worker {
 
     }
 
+
+
     public void setHoursWorked(double hours) {
         hoursWorked = hours;
     }
@@ -43,7 +45,7 @@ public class Worker {
     public double calculatePay() {
         return hoursWorked * hourlyRate;
 
-    }
+        }
 
     ;
 
