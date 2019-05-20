@@ -1,37 +1,42 @@
-public class Plumber extends  Worker {
+public class Plumber extends Worker {
 
-    private  double plumbingMatrials = 0;
+    private double plumbingMatrials = 0;
 
-   public  Plumber(String firstName, String lastName, Address address,
-                   int idnumber, double hours,double rate){
+    public Plumber(String firstName, String lastName, Address address,
+                   int idnumber, double hours, double rate) {
 
-       super(firstName,lastName,address,idnumber,hours,rate);
-   }
-
-
+        super(firstName, lastName, address, idnumber, hours, rate);
+    }
 
 
-    public void setPlumbingCosts(double ammount){
+    public void setPlumbingCosts(double ammount) {
 
-       plumbingMatrials = ammount;
-    };
+        plumbingMatrials = ammount;
+    }
+
+    ;
 
 
-    public String doWork(){
-        return  "Install plumbing";
-    };
+    public String doWork() {
+        return "Install plumbing";
+    }
+
+    ;
 
     @Override
-    public String toString(){
-        return  "Plumber" + super.toString() + "\n" + doWork();
-    };
+    public String toString() {
+        return "Plumber" + super.toString() + "\n" + doWork();
+    }
+
+    ;
+
     @Override
-    public double calculatePay(){
+    public double calculatePay() {
 
-        return  super.calculatePay() + plumbingMatrials;
-    };
+        return super.calculatePay() + plumbingMatrials;
+    }
 
-
+    ;
 
 
 }

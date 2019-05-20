@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7aba2bd2-a961-428c-a2e2-9b42a3bb969b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mandatoryJava/ContractorTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mandatoryJava/ContractorTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mandatoryJava/ContractorTest/out/production/ContractorTest/ContractorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mandatoryJava/ContractorTest/out/production/ContractorTest/ContractorTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Carpenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Carpenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/ContractorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/ContractorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Electrician.java" beforeDir="false" afterPath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Electrician.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Plumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Plumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Worker.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Project.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="135">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -50,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Address.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="180">
+              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -94,6 +99,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,14 +137,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554771091458" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mandatoryJava/ContractorTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myJavaExercises" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Diff &amp; Merge" />
   </component>
   <component name="RunDashboard">
@@ -166,9 +171,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="27" width="1299" height="741" extended-state="6" />
+    <frame x="70" y="27" width="1296" height="741" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16865553" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17145136" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -225,18 +230,11 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/eclipse-workspace/testproject/src/testproject/package1/MyFirstProject.java" />
+    <entry file="file://$PROJECT_DIR$/../eclipse-workspace/testproject/src/testproject/package1/MyFirstProject.java" />
     <entry file="file://$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Project.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        <state relative-caret-position="135">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -250,17 +248,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Electrician.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mandatoryJava/ContractorTest/src/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>

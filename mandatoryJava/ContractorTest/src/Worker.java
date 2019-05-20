@@ -2,7 +2,7 @@ public class Worker {
 
 
     private String firstName;
-    private  String lastName;
+    private String lastName;
     private Address address;
     private int idnNmber;
     private double hoursWorked;
@@ -27,7 +27,6 @@ public class Worker {
     }
 
 
-
     public void setHoursWorked(double hours) {
         hoursWorked = hours;
     }
@@ -45,7 +44,7 @@ public class Worker {
     public double calculatePay() {
         return hoursWorked * hourlyRate;
 
-        }
+    }
 
     ;
 

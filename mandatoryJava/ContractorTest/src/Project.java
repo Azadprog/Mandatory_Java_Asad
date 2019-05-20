@@ -12,11 +12,10 @@ public class Project implements Comparable {
     private LocalDate startDate;
     private LocalDate endDate;
 
-    public Project(String projectName, String owner,  Address projectAddress,
-                   LocalDate startDate, LocalDate endDate) {     // Constructer1
-
+    public Project(String projectName, String owner, Address projectAddress,
+                   LocalDate startDate, LocalDate endDate) {
         this.projectName = projectName;
-        this.owner =  owner;
+        this.owner = owner;
         this.projectAddress = projectAddress;
 
         this.startDate = startDate;
@@ -26,11 +25,11 @@ public class Project implements Comparable {
     }
 
 
-    public Project(String projectName, String owner, Address projectAddress) { //Constructor2
+    public Project(String projectName, String owner, Address projectAddress) {
 
         this.projectAddress = projectAddress;
         this.projectName = projectName;
-        this.owner = owner ;
+        this.owner = owner;
 
     }
 
@@ -98,7 +97,7 @@ public class Project implements Comparable {
         return projectDetails;
 
     }
-    }
+}
 
 
 

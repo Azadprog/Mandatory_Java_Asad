@@ -16,31 +16,22 @@ public class Carpenter extends Worker {
         lumberCost = ammount;
     }
 
-    ;
-
     public String doWork() {
 
         return "carpenter";
 
     }
 
-    ;
-
     @Override
     public String toString() {
         return "Capenter : " + super.toString() + "\n" + doWork();
     }
 
-    ;
 
 
     @Override
     public double calculatePay() {
         return super.calculatePay() + lumberCost;
-
     }
 
-    ;
-
-
-}
+};
